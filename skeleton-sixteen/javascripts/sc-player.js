@@ -511,7 +511,7 @@
             .append('<a href="#play" class="sc-play">4</a> <a href="#pause" class="sc-pause">5</a>').end()
 
          
-         $artworks.prepend('<div class="sc-time-indicators"><span class="sc-position"></span> | <span class="sc-duration"></span></div>');     
+         $artworks.prepend('<div class="sc-time-indicators"><span class="sc-position"></span>&brvbar;<span class="sc-duration"></span></div>');     
                          
         // load and parse the track data from SoundCloud API
         loadTracksData($player, links, opts.apiKey);

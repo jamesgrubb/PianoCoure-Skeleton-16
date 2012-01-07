@@ -28,6 +28,7 @@ li.sc-track{
 }
 
 li.sc-track.format-audio {
+	float: left;
 	width: 100%;
 	margin: 0;
 }
@@ -46,8 +47,8 @@ li.sc-track.format-audio .sc-artwork-list{
 
 li.sc-track.format-audio .sc-tracklist{
 	float: left;
-	width:  51.851851851852%;
-	margin-left: 7.407407407407%;
+	width:  100%;
+	margin-left: 0%;
 }
 
 .ie6 li.sc-track.format-audio .sc-tracklist{
@@ -294,6 +295,17 @@ background-color: orange;
 
 .meta{
 	margin: 24px 0 0 ;
+}
+
+/*formta-audio*/
+
+li.sc-track.format-audio .sc-artwork-list{
+	float: left;
+}
+
+li.sc-track.format-audio .sc-tracklist{
+	float: left;
+	margin-left: -120px;
 }
 
 li.sc-track.format-audio .meta{

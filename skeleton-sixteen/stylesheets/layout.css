@@ -39,10 +39,7 @@ padding: 20px;
 }
 
 
-li.sc-track.format-audio .sc-artwork-list{
-	float: left;
-	width: 120px;
-}
+
 
 
 li.sc-track.format-audio .sc-tracklist{
@@ -149,6 +146,7 @@ height: 25px;
 	-webkit-box-shadow: 0 6px 6px -6px black;
 	-moz-box-shadow: 0 6px 6px -6px black;
 	box-shadow: 0 6px 6px -6px black;
+
 }
 
 .sc-player .sc-controls a.sc-pause{
@@ -243,7 +241,7 @@ float: left;
 }
 
 
-/*Track list*/
+/*Track list Icon Details*/
 
 .sc-player .sc-track-state{
 	float: left;
@@ -290,14 +288,18 @@ background-color: orange;
     background-color: silver;
 }
 
+/* @group Meta */
 
-/*Meta*/
+.meta{ clear: both;	}
 
-.meta{
-	margin: 24px 0 0 ;
-}
+/* @end */
 
 /*formta-audio*/
+
+li.sc-track.format-audio .sc-artwork-list{
+	float: left;
+	width: 120px;
+}
 
 li.sc-track.format-audio .sc-artwork-list{
 	float: left;
@@ -308,16 +310,11 @@ li.sc-track.format-audio .sc-tracklist{
 	margin-left: -120px;
 }
 
-li.sc-track.format-audio .sc-tracklist li {
+.sc-track.format-audio .sc-tracklist li {
 	margin-left: 140px;
 }
 
-li.sc-track.format-audio .meta{
-width: 11.111111111111%;
-position: absolute;
-top: 0;
-left:  85.185185185185%;	
-}
+
 
 /*Commments Bubble*/
 
@@ -366,6 +363,7 @@ a.spch-bub-inside:hover .point {
 
 /*end comments bubble*/
 
+
 /* #Page Styles
 ================================================== */
 .right{
@@ -386,54 +384,74 @@ a.spch-bub-inside:hover .point {
 
 	/* All Mobile Sizes (devices and browser) */
 	@media only screen and (max-width: 767px) {}
-
-	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
-	@media only screen and (min-width: 480px) and (max-width: 767px) {
 	
-	li.sc-track{
-		float: none;
-		width: 100%;
-		margin-right: 0;
-		margin-top: 0;
-		margin-bottom: 0;
-		padding: 0;
-		display: block;	
+		/* @group Mobile Landscape Size to Tablet Portrait (devices and browsers */
+	
+	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+		@media only screen and (min-width: 480px) and (max-width: 767px) {
+		
+	/*track*/
+	
+		li.sc-track {
+			float: none;
+			width: 100%;
+			margin-right: 0;
+			margin-top: 0;
+			margin-bottom: 0;
+			padding: 0;
+			display: block; }
+			
+			
+			
+		li.sc-track .sc-artwork-list {
+			float: left;
+			width: 120px; }
+	
+		.sc-track .sc-tracklist li { margin-left: 140px; }
+		
+		.sc-track .sc-tracklist {
+			float: left;
+			width:  100%;
+			margin-left: -120px; }
+					
+		
+	/*track-fortma-audio*/	
+	
+		.sc-track.format-audio .sc-track-artwork li { float: left;}	
+	
+		.meta{ clear: both;	}	
+	
+	
+	
 	}
-
-li.sc-track .sc-artwork-list{
-	float: left;
-	width: 120px;
-
-}
-
-
-
-li.sc-track .sc-tracklist{
-	float: left;
-	width:  51.851851851852%;
-	margin-left: 7.407407407407%;
-}
-
-.meta{
-
-		clear: both;
-	}
-
-}
-
-	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+	
+	/* @end */ 
+	
+	
+		/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 	@media only screen and (max-width: 479px) {
 	
 	li.sc-track{
-		float: none;
-		width: 100%;
-		margin-right: 0;
-		margin-top: 0;
-		margin-bottom: 0;
-		padding: 0;
-		display: block;
-		
-	}	
+	float: none;
+	width: 100%;
+	margin-right: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding: 0;
+	display: block; }	
+	
+	li.sc-track.format-audio .sc-tracklist li{
+	margin-left: 0;
+	}
+
+	li.sc-track.format-audio .sc-tracklist {
+	margin: 0;
+	}
+
+	
+	li.sc-track.format-audio .sc-artwork-list  { float: none; }
+	
+
 }
 
 

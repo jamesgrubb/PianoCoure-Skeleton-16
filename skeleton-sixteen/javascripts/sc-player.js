@@ -9,6 +9,8 @@
 *   <a href="http://soundcloud.com/matas/hobnotropic" class="sc-player">My new dub track</a>
 *   The link will be automatically replaced by the HTML based player
 */
+$(document).ready(function(){ 
+
 (function($) {
   // Convert milliseconds into Hours (h), Minutes (m), and Seconds (s)
   var timecode = function(ms) {
@@ -493,7 +495,7 @@
         links = opts.links || $.map($('a', $source).add($source.filter('a')), function(val) { return {url: val.href, title: val.innerHTML}; }),
         $player = $('<div class="sc-player loading"></div>').data('sc-player', {id: playerId}),
         $artworks = $('<ol class="sc-artwork-list"></ol>').appendTo($player),
-        $controls = $('<div class="sc-controls"></div>').appendTo($artworks),
+        $controls = $('<li class="sc-controls"></li>').appendTo($artworks),
         $list = $('<ol class="sc-trackslist"></ol>').appendTo($player);
         $info = $('<li class="sc-info"><h3 class="sc-track-title"></h3><div class="sc-more-info"><h4></h4><p class="remove-bottom"></p></div><footer></footer></li>').appendTo($list)
         // add the classes of the source node to the player itself
@@ -511,7 +513,7 @@
             .append('<a href="#play" class="sc-play">4</a> <a href="#pause" class="sc-pause">5</a>').end()
 
          
-         $artworks.prepend('<div class="sc-time-indicators"><span class="sc-position"></span>&brvbar;<span class="sc-duration"></span></div>');     
+         $artworks.prepend('<li class="sc-time-indicators"><span class="sc-position"></span>&brvbar;<span class="sc-duration"></span></li>');     
                          
         // load and parse the track data from SoundCloud API
         loadTracksData($player, links, opts.apiKey);
@@ -724,3 +726,4 @@
   });
 
 })(jQuery);
+});

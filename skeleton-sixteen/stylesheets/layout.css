@@ -454,6 +454,17 @@ a.spch-bub-inside:hover .point {
 
 }
 
+.sc-player .hidden {
+  display: none;
+}
+
+.sc-player-engine-container{
+  width: 1px;
+  height: 1px;
+  position: fixed;
+  top: 2px;
+  left: 2px;
+}
 
 /* #Font-Face
 ================================================== */

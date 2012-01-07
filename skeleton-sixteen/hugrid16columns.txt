@@ -1,0 +1,62 @@
+<script type="text/javascript">
+    definegrid = function() {
+        var browserWidth = $(window).width(); 
+        if (browserWidth >= 1001) 
+        {
+            pageUnits = 'px';
+            colUnits = 'px';
+            pagewidth = 940;
+            columns = 16;
+            columnwidth = 40;
+            gutterwidth = 20;
+            pagetopmargin = 0;
+            rowheight = 21;
+            makehugrid();
+        } 
+        if (browserWidth <= 1000) 
+        {
+            pageUnits = 'px';
+            colUnits = 'px';
+            pagewidth = 748;
+            columns = 16;
+            columnwidth = 28;
+            gutterwidth = 20;
+            pagetopmargin = 0;
+            rowheight = 21;
+            makehugrid();
+    }
+        if (browserWidth <= 768) 
+        {
+            pageUnits = 'px';
+            colUnits = 'px';
+            pagewidth = 420;
+            columns = 1;
+            columnwidth = 28;
+            gutterwidth = 20;
+            pagetopmargin = 0;
+            rowheight = 21;
+            makehugrid();
+            }
+            if (browserWidth <= 480) 
+            {
+                pageUnits = 'px';
+                colUnits = 'px';
+                pagewidth = 300;
+                columns = 1;
+                columnwidth = 28;
+                gutterwidth = 20;
+                pagetopmargin = 0;
+                rowheight = 21;
+                makehugrid();
+                }
+            
+    }
+    $(document).ready(function() {
+        definegrid();
+        setgridonload();
+    });    
+
+    $(window).resize(function() {
+        definegrid();
+    });
+</script>

@@ -75,49 +75,8 @@
 <div class="fourteen columns offset-by-one clearfix" style="background: pink;">
 	<ul id="sc-track-list">	
 		<li class="sc-track">
-		<div class="sc-player playing" style="background: green;">
-				<ol class="sc-artwork-list">
-					<li class="sc-time-indicators">
-					<span class="sc-position">02</span>&brvbar;<span class="sc-duration">05</span>
-					</li>
-					<li class="sc-controls">
-						
-						
-							<a href="#play" class="sc-play">4</a>
-							<a href="#pause" class="sc-pause">5</a>
-				
-					</li>
-					<li class="sc-track-artwork-active">
-						<div class="sc-no-artwork"><img src="images/no-artwork.jpg"  alt="no artwork" /></div>
-					</li>
-				</ol>		
-			<ol class="sc-tracklist">
-				<li class="sc-info">
-					<h3 class="sc-track-title">
-						<a href="#">Gently</a>
-						<a href="#info" class="sc-info-toggle button">more<span class="icon">i</span></a>
-					</h3>
-					<div class="sc-more-info">
-						<h4>by
-						<a href="#">Jillian02</a>
-						</h4>
-						<p class="remove-bottom">Solo Piano</p>
-					</div>
-					<footer></footer>
-				</li>
-				<li class="active">
-						<span class="sc-track-state"></span>
-						<a href="#">Gently</a>
-				</li>
-				<li>
-						<span class="sc-track-state"></span>
-						<a href="#">Imporivisation</a>
-				</li>
-				<li>
-						<span class="sc-track-state"></span>
-						<a href="#">Imporivisation</a>
-				</li>					
-			</ol>
+		<div class="sc-player" style="background: green;">
+				 <a href="http://soundcloud.com/jillian02/gently" class="sc-player">Matas tracks</a>
 				<div class="meta">
 				<p>
 				   
@@ -487,74 +446,15 @@
 
 	<!-- JS
 	================================================== -->
-	<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+	<script type="text/javascript" src="javascripts/soundcloud.player.api.js"></script>	
+	<script type="text/javascript" src="javascripts/sc-player.js"></script>
 	<!--[if (gte IE 6)&(lte IE 8)]>
 	<script type="text/javascript" src="javascripts/selectivizr-min.js"></script>
 	<![endif]--> 
 	<script src="javascripts/tabs.js"></script>
 	<script src="javascripts/hugrid.js"></script>
-<script type="text/javascript">
-    definegrid = function() {
-        var browserWidth = $(window).width(); 
-        if (browserWidth >= 1001) 
-        {
-            pageUnits = 'px';
-            colUnits = 'px';
-            pagewidth = 940;
-            columns = 16;
-            columnwidth = 40;
-            gutterwidth = 20;
-            pagetopmargin = 0;
-            rowheight = 21;
-            makehugrid();
-        } 
-        if (browserWidth <= 1000) 
-        {
-            pageUnits = 'px';
-            colUnits = 'px';
-            pagewidth = 748;
-            columns = 16;
-            columnwidth = 28;
-            gutterwidth = 20;
-            pagetopmargin = 0;
-            rowheight = 21;
-            makehugrid();
-    }
-        if (browserWidth <= 768) 
-        {
-            pageUnits = 'px';
-            colUnits = 'px';
-            pagewidth = 420;
-            columns = 1;
-            columnwidth = 28;
-            gutterwidth = 20;
-            pagetopmargin = 0;
-            rowheight = 21;
-            makehugrid();
-            }
-            if (browserWidth <= 480) 
-            {
-                pageUnits = 'px';
-                colUnits = 'px';
-                pagewidth = 300;
-                columns = 1;
-                columnwidth = 28;
-                gutterwidth = 20;
-                pagetopmargin = 0;
-                rowheight = 21;
-                makehugrid();
-                }
-            
-    }
-    $(document).ready(function() {
-        definegrid();
-        setgridonload();
-    });    
 
-    $(window).resize(function() {
-        definegrid();
-    });
-</script>
 
 <!-- End Document
 ================================================== -->

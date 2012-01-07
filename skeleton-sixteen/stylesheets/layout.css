@@ -308,6 +308,10 @@ li.sc-track.format-audio .sc-tracklist{
 	margin-left: -120px;
 }
 
+li.sc-track.format-audio .sc-tracklist li {
+	margin-left: 140px;
+}
+
 li.sc-track.format-audio .meta{
 width: 11.111111111111%;
 position: absolute;

@@ -1,0 +1,440 @@
+/*
+* Skeleton V1.1
+* Copyright 2011, Dave Gamache
+* www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 8/17/2011
+*/
+
+/* Table of Content
+==================================================
+	#Site Styles
+	#Page Styles
+	#Media Queries
+	#Font-Face */
+
+/* #Site Styles
+================================================== */
+li.sc-track{
+	float: left;
+	width: 31.288343558282%;
+	margin-right: 3.067484662577%;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding: 0;
+	display: block;
+	
+}
+
+li.sc-track.format-audio {
+	width: 100%;
+	margin: 0;
+}
+
+li.sc-track.format-audio .sc-player {
+padding: 20px;
+	
+}
+
+
+li.sc-track.format-audio .sc-artwork-list{
+	float: left;
+	width: 120px;
+}
+
+
+li.sc-track.format-audio .sc-tracklist{
+	float: left;
+	width:  51.851851851852%;
+	margin-left: 7.407407407407%;
+}
+
+.ie6 li.sc-track.format-audio .sc-tracklist{
+	margin-left: 20px;
+}
+
+
+li.sc-track:nth-child(3n+3) {  /* or 4n+1 */
+    margin-right: 0;
+}
+
+.sc-player li{
+	list-style: none;
+}
+
+.sc-player a{
+	text-decoration: none;
+}
+
+.sc-player.playing{
+	overflow: hidden;
+}
+
+.sc-player{
+	padding: 0 20px 20px;
+	position: relative;
+}
+
+.sc-player footer{
+height: 25px;
+	background: url('../images/info-bg.png') no-repeat center top transparent;
+}
+
+.sc-artwork-list{
+	position: relative;
+	list-style: none;
+}
+
+.sc-time-indicators, .sc-controls {
+	position: absolute;
+	
+}
+
+.sc-time-indicators{
+	font-family: "Courier New", Courier, mono;
+}
+
+.sc-player .sc-controls{
+	top: 50%;
+	left: 50%;
+	margin: -8px 0 0 -8px;
+	font-family: PictosRegular;
+	width: 18px;
+	height: 18px;
+	display: block;
+}
+
+.sc-player .sc-controls a{
+	display: block;
+	width: 50px;
+	height: 50px;
+	text-shadow: 0 1px 1px rgba(255, 255, 255, 0.6);
+	color: blue;
+}
+	.sc-player .sc-controls a:hover{
+				color: navy;
+	}
+	
+
+.sc-player .sc-controls a.sc-pause, .sc-controls a.sc-play{
+	line-height: 8px;
+	text-decoration: none;
+	background-color: orange;
+	display: block;
+	line-height: 12px;
+	width: 18px;
+	height: 18px;
+	text-align: center;
+	-moz-border-radius: 1px;
+	-webkit-border-radius: 1px;
+	border-radius: 1px;
+	}
+
+.sc-player .sc-controls a.sc-pause{
+  display: none;
+}
+
+.sc-player .sc-artwork-list{
+	width: 120px;
+	height: 120px;
+	display: block;
+	margin: 24px auto;
+	background-color: #transparent;
+	list-style-type: none;
+	position: relative;
+	border-radius: 2px;
+	overflow: hidden;
+	-webkit-box-shadow: 0 6px 6px -6px black;
+	-moz-box-shadow: 0 6px 6px -6px black;
+	box-shadow: 0 6px 6px -6px black;
+}
+
+.sc-player .sc-controls a.sc-pause{
+  display: none;
+}
+
+.sc-player.playing .sc-controls a.sc-play{
+  display: none;
+}
+
+.sc-player.playing .sc-controls a.sc-pause{
+  display: block;
+}
+
+/*Timer*/
+
+.sc-time-indicators{
+	top: 82%;
+	left:35%;
+	font-size: 12px;
+	text-shadow: 0 1px 1px;
+	opacity: 0.5;
+	display: block;
+	background-color: white;
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+	border-radius: 100px; 
+	height: 13px;
+	line-height: 13px;
+	padding: 1px 3px;
+	-moz-box-shadow:    inset 0 1px 3px #000000;
+	   -webkit-box-shadow: inset 0 0 3px #000000;
+	   box-shadow:         inset 0 1px 3px #000000;
+}
+
+.sc-player .sc-artwork-list img{
+	width: 100%;
+	height: auto;
+	
+}	
+
+.sc-player .sc-artwork-list .post img{
+float: left;
+	width: 120px;
+	height: auto;
+}	
+
+.sc-player .sc-tracklist{
+	margin: 0;
+	padding: 0;
+}
+.sc-info{
+	text-align: center;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+.sc-player .sc-info-toggle {
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+	border-radius: 100px;
+	background-color: silver;
+	border: 0;
+	padding: 2px 1px 1px 5px;
+	height: 16px;
+	line-height: 8px;
+	position: relative;
+	top: -3px;
+	margin: 0 4px;
+}
+
+.sc-player .sc-info-toggle:hover{
+	border: 0;
+}
+
+.icon{
+	position: relative;
+	top: 1px;
+	font-family: PictosRegular;
+	line-height: 5px;
+	font-size: 16px;
+	padding: 0 2px;
+}
+
+
+/*Info Box*/
+
+.sc-player .sc-more-info{
+	background-color: rgba(128, 201, 238, 0.64);
+	padding-bottom: 12px;
+}
+
+
+/*Track list*/
+
+.sc-player .sc-track-state{
+	float: left;
+	display: block;
+    zoom: 1;
+	width: 16px;
+	height: 16px;
+	background-color: white;
+	margin: 0 4px 0 0px;
+	-webkit-border-radius: 1px;
+	-moz-border-radius: 1px;
+	border-radius: 1px;
+}
+
+.sc-player .sc-track-state:before{
+	content: "<";
+	width: 16px;
+	height: 16px;
+	display: block;
+	font-family: pictosRegular;
+	line-height: 10px;
+	text-align: center;
+	color: silver;
+	
+}
+
+.sc-player.playing .active .sc-track-state:before{
+content: ">";
+color: blue;
+background-color: orange;	
+}
+.sc-player ol.sc-tracklist li:nth-child(n+2) a {
+	color: red;
+	padding: 0 0 4px;
+    border-bottom: 1px solid rgb(237, 237, 237);
+    display: block;
+}
+.sc-player ol.sc-tracklist li:nth-child(n+2) a:after {
+	content: "";
+	position: relative;
+	bottom: -4px;
+    display: block;
+    height: 1px;
+    background-color: silver;
+}
+
+
+/*Meta*/
+
+.meta{
+	margin: 24px 0 0 ;
+}
+
+li.sc-track.format-audio .meta{
+width: 11.111111111111%;
+position: absolute;
+top: 0;
+left:  85.185185185185%;	
+}
+
+/*Commments Bubble*/
+
+.spch-bub-inside {
+  position: relative;
+}
+a.spch-bub-inside {
+  color: #00F;
+  text-decoration: none;
+}
+.spch-bub-inside em {
+  font-style: normal;
+}
+.spch-bub-inside em {
+  background: #00F;
+  color: #FFF;
+  padding: 0 0.4em;
+  -moz-border-radius: 0.25em;
+  -webkit-border-radius: 0.25em;
+  border-radius: 0.25em;
+  position: relative;
+}
+.spch-bub-inside .point {
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 1.1em;
+  left: 0.4em;
+  display: block;
+  border-left: 0.45em solid #00F; 
+  border-bottom: 0.45em solid #FFF; /* IE fix */
+  border-bottom: 0.45em solid rgba(0,0,0,0); 
+  overflow: hidden; /* IE fix */
+}
+a.spch-bub-inside:hover {
+  color: #F00;
+}
+a.spch-bub-inside:hover em {
+  cursor: pointer;
+  background: orange;
+  color: white;
+}
+a.spch-bub-inside:hover .point {
+  border-left: 0.5em solid orange; 
+}
+
+/*end comments bubble*/
+
+/* #Page Styles
+================================================== */
+.right{
+	float: right;
+}		
+
+.left{
+	float: left;
+}
+/* #Media Queries
+================================================== */
+
+	/* Smaller than standard 960 (devices and browsers) */
+	@media only screen and (max-width: 959px) {}
+
+	/* Tablet Portrait size to standard 960 (devices and browsers) */
+	@media only screen and (min-width: 768px) and (max-width: 959px) {}
+
+	/* All Mobile Sizes (devices and browser) */
+	@media only screen and (max-width: 767px) {}
+
+	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+	@media only screen and (min-width: 480px) and (max-width: 767px) {
+	
+	li.sc-track{
+		float: none;
+		width: 100%;
+		margin-right: 0;
+		margin-top: 0;
+		margin-bottom: 0;
+		padding: 0;
+		display: block;	
+	}
+
+li.sc-track .sc-artwork-list{
+	float: left;
+	width: 120px;
+
+}
+
+
+
+li.sc-track .sc-tracklist{
+	float: left;
+	width:  51.851851851852%;
+	margin-left: 7.407407407407%;
+}
+
+.meta{
+
+		clear: both;
+	}
+
+}
+
+	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+	@media only screen and (max-width: 479px) {
+	
+	li.sc-track{
+		float: none;
+		width: 100%;
+		margin-right: 0;
+		margin-top: 0;
+		margin-bottom: 0;
+		padding: 0;
+		display: block;
+		
+	}	
+}
+
+
+/* #Font-Face
+================================================== */
+/* 	This is the proper syntax for an @font-face file
+		Just create a "fonts" folder at the root,
+		copy your FontName into code below and remove
+		comment brackets */
+
+/*	@font-face {
+	    font-family: 'FontName';
+	    src: url('../fonts/FontName.eot');
+	    src: url('../fonts/FontName.eot?iefix') format('eot'),
+	         url('../fonts/FontName.woff') format('woff'),
+	         url('../fonts/FontName.ttf') format('truetype'),
+	         url('../fonts/FontName.svg#webfontZam02nTh') format('svg');
+	    font-weight: normal;
+	    font-style: normal; }
+*/
